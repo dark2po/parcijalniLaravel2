@@ -28,6 +28,7 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request);
         Role::create([
             'roleName' => $request->input('roleName'),
         ]);
