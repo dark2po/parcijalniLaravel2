@@ -18,22 +18,26 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Darko Pokrajac',
                 'email' => 'darko.pokrajac@gmail.com',
-                'password' => Hash::make('instal2002')
+                'password' => Hash::make('instal2002'),
+                'role_id' => 1
             ],
             [
                 'name' => 'Ana',
                 'email' => 'ana@gmail.com',
-                'password' => Hash::make('instal2002')
+                'password' => Hash::make('instal2002'),
+                'role_id' => 1
             ],
             [
                 'name' => 'Marija',
                 'email' => 'marija@gmail.com',
-                'password' => Hash::make('instal2002')
+                'password' => Hash::make('instal2002'),
+                'role_id' => 2
             ],
             [
                 'name' => 'Stipe',
                 'email' => 'stipe@gmail.com',
-                'password' => Hash::make('instal2002')
+                'password' => Hash::make('instal2002'),
+                'role_id' => 2
             ],
 
         ]);

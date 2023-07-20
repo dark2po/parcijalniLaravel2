@@ -22,7 +22,7 @@ class UserConrtoller extends Controller
      */
     public function create()
     {
-        return view('createUser');
+        return view('user.createUser');
     }
 
     /**
@@ -52,7 +52,7 @@ class UserConrtoller extends Controller
      */
     public function edit(User $user)
     {
-        return view('editUser', ['name' => $user->name, 'id' => $user->id, 'email' => $user->email]);
+        return view('user.editUser', ['name' => $user->name, 'id' => $user->id, 'email' => $user->email]);
     }
 
     /**

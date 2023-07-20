@@ -24,6 +24,7 @@
 <form action="/user/{{$id}}", method=post>
   <input type="hidden" name="_method" value="DELETE">
   <label for="name">User name:</label><br>
+  <input type="text" id="name" name="name" required="required" value={{$name}} ><br><br>
   @csrf 
   <input type="submit" value="Delete User !!!">
 </form>

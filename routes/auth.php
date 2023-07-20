@@ -9,6 +9,9 @@ use App\Http\Controllers\Auth\PasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Http\Controllers\NavigationController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserConrtoller;
 use Illuminate\Support\Facades\Route;
 
@@ -62,7 +65,13 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
 
-    Route::resource('/user', UserConrtoller::class);       
+    Route::resource('/user', UserConrtoller::class);
+
+    Route::resource('/role', RoleController::class);  
+
+    Route::resource('/page', PageController::class);
+    
+    Route::resource('/navigation', NavigationController::class);  
 
 
 });
